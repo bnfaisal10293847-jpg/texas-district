@@ -1,11 +1,7 @@
 {
-  "outputDirectory": "public",
+  "cleanUrls": true,
+  "trailingSlash": false,
   "rewrites": [
-    { "source": "/rules",       "destination": "/rules.html" },
-    { "source": "/creators",    "destination": "/creators.html" },
-    { "source": "/jobs",        "destination": "/jobs.html" },
-    { "source": "/store",       "destination": "/store.html" },
-    { "source": "/admin-login", "destination": "/admin-login.html" },
     { "source": "/admin-check", "destination": "/api/admin-check" }
   ]
 }
