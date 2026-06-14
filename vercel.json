@@ -1,15 +1,11 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "server.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/server.js"
-    }
+  "outputDirectory": "public",
+  "rewrites": [
+    { "source": "/rules",       "destination": "/rules.html" },
+    { "source": "/creators",    "destination": "/creators.html" },
+    { "source": "/jobs",        "destination": "/jobs.html" },
+    { "source": "/store",       "destination": "/store.html" },
+    { "source": "/admin-login", "destination": "/admin-login.html" },
+    { "source": "/admin-check", "destination": "/api/admin-check" }
   ]
 }
